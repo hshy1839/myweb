@@ -71,8 +71,8 @@ const Main = () => {
             <div className='section3'>
                 <div className='blank'></div>
                 <div className='section3-headline'>
-                MEET YOUR <br/>
-                <i>TEACHER</i>
+                MEET TO <br/>
+                <i>JEONGMIN</i>
                 </div>
                 <img src="../../images/cat5.jpeg" alt="Left" className="section3-image1" />
             <div className='section3-article'>
