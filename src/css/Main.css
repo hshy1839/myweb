@@ -373,6 +373,7 @@ body {
     .section2-article {
       margin-top: 15%;
       font-size: 12px;
+      margin-left: 20%;
     }
     .section2-image1 {
       margin-top: 15%;
@@ -389,6 +390,7 @@ body {
     .section3-article {
       margin-top: 10%;
       font-size: 13px;
+      margin: 10%;
     }
     .section3-button {
       margin-top: 10%;
@@ -411,6 +413,7 @@ body {
     .section4-media-context {
       margin-top: 10%;
       font-size: 15px;
+      margin: 5%;
     }
     .section4-button {
       margin-top: 20%;
