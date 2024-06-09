@@ -1,0 +1,227 @@
+body {
+    text-decoration: none;
+    background-color: black;
+}
+.main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+
+.section1 {
+    background-color: black;
+}
+  
+  .headline {
+    position: relative;
+    font-size: 250px;
+    font-weight: bold;
+    color: #00c8ff;
+    z-index: 2;
+    font-family: 'Bebas Neue';
+    line-height: 0.8;
+    user-select: none;
+  }
+  
+  .images {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-image {
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+    width: 30%;
+    height: 71%;
+    top: 10%;
+  }
+  
+  .right-image {
+    position: absolute;
+    right: 4%;
+    z-index: 3;
+    top: 45%;
+    width: 25%;
+    height: 35.5%;
+  }
+  .work-button {
+    background-color: transparent;
+    border: 1px solid #00c8ff;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25%;
+    height: 70px;
+    color: #00c8ff;
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    transition: background-color 0.5s ease;
+  }
+  .work-button:hover {
+    background-color: #61DAFB;
+    color: black;
+  }
+  .skills-container {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #00c8ff;
+    border-right: none;
+    border-left: none;
+  }
+  
+  .skills-display {
+    display: flex; 
+    flex-direction: row;
+    overflow: hidden;
+    animation: slideLeft 10s linear infinite; /* 2초 동안 좌측으로 슬라이드 애니메이션 반복 */
+  }
+  .skills {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 25px;
+    color: #00c8ff;
+    user-select: none;
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100%); /* 시작 위치: 오른쪽에서 시작 */
+    }
+    100% {
+      transform: translateX(-100%); /* 끝 위치: 왼쪽으로 슬라이드 */
+    }
+  }
+
+  .section2 {
+    margin-top: 5%;
+    background-color: black;
+}
+
+.section2-headline {
+    position: relative;
+    font-size: 250px;
+    font-weight: bold;
+    color: #00c8ff;
+    z-index: 2;
+    font-family: 'Bebas Neue';
+    user-select: none;
+  }
+.section2-article {
+    position: relative;
+    font-size: 30px;
+    color: #00c8ff;
+    text-align: right;
+    margin-right: 10%;
+}
+.section2-image1 {
+    margin-top: 5%;
+    width: 90%;
+    height: 900px;
+}
+.section3 {
+    background-color: #00c8ff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.blank {
+    height: 5em;
+}
+.section3-headline {
+    font-size: 250px;
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+    line-height: 0.8;
+    font-family: 'Bebas Neue';
+    user-select: none;
+}
+.section3-image1 {
+    width: 40%;
+}
+.section3-article {
+    margin-top: 3%;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+.section3-button {
+    margin-top: 5%;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 25%;
+    height: 70px;
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    transition: background-color 0.5s ease;
+}
+.section3-button:hover {
+    background-color: black;
+    color: #00c8ff;
+  }
+
+.section4 {
+    color: #00c8ff;
+}
+.section4-headline {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 250px;
+    font-weight: bold;
+    z-index: 2;
+    line-height: 0.8;
+    font-family: 'Bebas Neue';
+    user-select: none;
+}
+.section4-media-title {
+    margin-top: 10%;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 5%;
+}
+.section4-media-container {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.section4-image1 {
+    margin-left: 5%;
+    width: 40%;
+    height: 500px;
+}
+.section4-media-context {
+    text-align: left;
+    margin-left: 3%;
+    font-size: 25px;
+    line-height: 1.8;
+}
+.section4-button {
+    margin-top: 5%;
+        background-color: transparent;
+        border: 1px solid #00c8ff;
+        cursor: pointer;
+        border-radius: 50%;
+        width: 25%;
+        height: 70px;
+        color: #00c8ff;
+        font-size: 1.5em;
+        margin-bottom: 10%;
+        transition: background-color 0.5s ease;
+}
+.section4-button:hover {
+    background-color: #61DAFB;
+    color: black;
+  }
