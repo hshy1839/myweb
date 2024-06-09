@@ -54,21 +54,52 @@ body {
     height: 35.5%;
   }
   .work-button {
-    background-color: transparent;
-    border: 1px solid #00c8ff;
     cursor: pointer;
-    border-radius: 50%;
-    width: 25%;
-    height: 70px;
-    color: #00c8ff;
-    font-size: 1.5em;
-    margin-bottom: 10%;
-    transition: background-color 0.5s ease;
+    --glow-color: #00c8ff;
+    --glow-spread-color: #0297c0;
+    --enhanced-glow-color: #00c8ff;
+    --btn-color: #024457;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 15em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 5%;
   }
+  .work-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
   .work-button:hover {
-    background-color: #61DAFB;
-    color: black;
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
   }
+  .work-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
   .skills-container {
     width: 100%;
     overflow: hidden;
@@ -156,23 +187,53 @@ body {
     text-align: center;
 }
 .section3-button {
-    margin-top: 5%;
-    background-color: transparent;
-    border: 1px solid black;
     cursor: pointer;
-    border-radius: 50%;
-    width: 25%;
-    height: 70px;
-    color: black;
-    font-size: 1.5em;
-    margin-bottom: 10%;
-    transition: background-color 0.5s ease;
+    margin-top: 5%;
+    --glow-color: #f9fbfc;
+    --glow-spread-color: #f0f0f0;
+    --enhanced-glow-color: #e6e7e7;
+    --btn-color: #00c8ff;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 15em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 5%;
 }
 .section3-button:hover {
-    background-color: black;
-    color: #00c8ff;
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
   }
-
+  .section3-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   .section3-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
 .section4 {
     color: #00c8ff;
 }
@@ -209,19 +270,51 @@ body {
     line-height: 1.8;
 }
 .section4-button {
+    cursor: pointer;
+    width: 15%;
     margin-top: 5%;
-        background-color: transparent;
-        border: 1px solid #00c8ff;
-        cursor: pointer;
-        border-radius: 50%;
-        width: 25%;
-        height: 70px;
-        color: #00c8ff;
-        font-size: 1.5em;
-        margin-bottom: 10%;
-        transition: background-color 0.5s ease;
-}
-.section4-button:hover {
-    background-color: #61DAFB;
-    color: black;
+    --glow-color: #00c8ff;
+    --glow-spread-color: #0297c0;
+    --enhanced-glow-color: #00c8ff;
+    --btn-color: #024457;
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 15em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-bottom: 5%;
   }
+  .section4-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+  .section4-button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+  }
+  .section4-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }

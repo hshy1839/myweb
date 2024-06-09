@@ -20,7 +20,11 @@ const Header = () => {
                         <a href="https://www.instagram.com/seokhyung98/" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                         </a></li>
-          <li className='Header-nav'><FaEnvelope/></li>
+                        <li className='Header-nav'>
+                        <a href="mailto:hongjeongmin1839@gmail.com">
+                            <FaEnvelope />
+                        </a>
+                    </li>
         </ul>
       </nav>
     </header>
