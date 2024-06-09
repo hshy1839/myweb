@@ -18,11 +18,11 @@ const Header = () => {
         <ul>
         <li className='Header-nav'>
                         <a href="https://www.instagram.com/seokhyung98/" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram />
+                            <FaInstagram style={{ color: '#E1306C', fontSize: '32px' }} />
                         </a></li>
                         <li className='Header-nav'>
                         <a href="mailto:hongjeongmin1839@gmail.com">
-                            <FaEnvelope />
+                            <FaEnvelope style={{ color: 'tomato', fontSize: '32px' }} />
                         </a>
                     </li>
         </ul>

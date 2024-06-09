@@ -55,8 +55,10 @@
       margin-left: 50%;
       font-size: 50px;
     }
-     nav ul li {
-      width: 80%;
-      height: 30px;
+    nav ul {
+      margin-left: 30%;
+    }
+     nav ul li a{
+      margin-left: 0%;
     }
   }
