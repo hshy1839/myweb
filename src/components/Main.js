@@ -40,7 +40,7 @@ const Main = () => {
                     <i>JEONGMIN</i>
                 </h1>
                 <button className="work-button">
-                    Let's go to work
+                    Contact me
                 </button>
                 <div className='skills-container'>
                     <div className='skills-display'>
@@ -82,7 +82,7 @@ const Main = () => {
             OF BELONGING / IDENTITY IS CULTIVATED WITH HIS FOLLOWERS.<br/>
             </div>
             <button className="section3-button">
-                    Let's go to work
+            Contact me
                 </button>
             </div>
             <div className='section4'>
