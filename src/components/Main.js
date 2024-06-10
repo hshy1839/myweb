@@ -88,32 +88,30 @@ const Main = () => {
             <div className='section4'>
                 <div className='blank'></div>
                 <div className='section4-headline'>
-                BECOME A CONTENT<br/> 
-                <i>EXPERT</i>
+                TO BECOME A PROFESSIONAL<br/> 
+                <i>DEVELOPER</i>
                 </div>
                 <div className='section4-media-title'>
-                01. VIDEO CONTENT STRATEGY BOOTCAMP
+                01. LULULALAZON
                 </div>
                 <div className='section4-media-container'>
                 <img src="../../images/cat9.jpeg" alt="Left" className="section4-image1" />
                 <div className='section4-media-context'>
-                PROJECT: KICKSTART YOUR CONTENT STRATEGY<br />
-                LESSONS: THREE 60 MINUTE LESSONS <br />
-                WHAT WE’LL COVER: CONCEPTS, VIDEO EDITING, CLICK ENHANCEMENT <br />
+                PROJECT<br/>: The Lululala Zone Fitness Center Website Project<br /><br />
+                USED SKILLS<br/>: PYCHARM, PYTHON, EJS, CSS, JAVASCRIPT, SQLLITE, EC2, GITHUB <br />
                 IT ALL BEGINS WITH AN IDEA. MAYBE YOU WANT TO LAUNCH A BUSINESS. MAYBE YOU WANT TO TURN A <br/>
                 HOBBY INTO SOMETHING MORE. OR MAYBE YOU HAVE A CREATIVE PROJECT TO SHARE WITH THE WORLD. <br/>
                 WHATEVER IT IS, THE WAY YOU TELL YOUR STORY ONLINE CAN MAKE ALL THE DIFFERENCE.  <br/>
                 </div>
             </div>
             <div className='section4-media-title'>
-            02. KEEP YOUR AUDIENCE COMING BACK
+            02. BUDDY
                 </div>
                 <div className='section4-media-container'>
                 <img src="../../images/cat8.jpeg" alt="Left" className="section4-image1" />
                 <div className='section4-media-context'>
-                PROJECT: CREATING CONTENT THAT STICKS<br />
-                LESSONS: TWO 60 MINUTE LESSONS <br />
-                WHAT WE’LL COVER: CONCEPTS, PHOTO EDITING, CLICK ENHANCEMENT <br />
+                PROJECT<br/>: Buddy Mobile App, Website, and Wearable App Project<br /><br />
+                USED SKILLS<br/>: REACT-NATIVE, REACT, kotlin, CSS, express, mysql, android studio, GITHUB, jira <br />
                 IT ALL BEGINS WITH AN IDEA. MAYBE YOU WANT TO LAUNCH A BUSINESS. MAYBE YOU WANT TO TURN A <br/>
                 HOBBY INTO SOMETHING MORE. OR MAYBE YOU HAVE A CREATIVE PROJECT TO SHARE WITH THE WORLD. <br/>
                 WHATEVER IT IS, THE WAY YOU TELL YOUR STORY ONLINE CAN MAKE ALL THE DIFFERENCE.  <br/>
