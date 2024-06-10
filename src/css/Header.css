@@ -1,64 +1,213 @@
 .header-container {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:black;
-    width: 80%;
-    height: 100px;
-    z-index: 1000;
-    color: #00c8ff;
-    font-size: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  color: #00c8ff;
+  font-size: 40px;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: white;
+  margin-left: 160%;
+  font-size: 70px;
+}
+
+.header-logo:visited {
+  text-decoration: none;
+}
+
+.btn-container {
+  cursor: pointer;
+  margin-left: 50%;
+}
+
+.header-nav a {
+  text-decoration: none;
+}
+
+.mail-btn, .instagram-btn,
+.instagram-btn::after,
+.mail-btn::after {
+  padding: 16px 20px;
+  font-size: 18px;
+  background: linear-gradient(45deg, transparent 5%, transparent 5%);
+  border: 0;
+  font-family: 'Bebas Neue';
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+  line-height: 0.5;
+  outline: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.mail-btn::after, .instagram-btn::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "Clicked";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #ff013c 3%, #ff013c 5%, #00e6f6 5%);
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #ff013c;
+  clip-path: var(--slice-0);
+}
+
+.mail-btn:hover::after, .instagram-btn:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
   }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-left: 6%;
+  margin-top: 1%;
+  z-index: 101;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 1.2em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+.menu {
+  display: none; /* 기본적으로 숨김 */
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  flex-direction: column;
+  top: 0px; /* 헤더 아래로 이동 */
+  right: 0;
+  padding: 20px;  
+  width: 100%;
+  height: 700px;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.hamburger input:checked ~ .menu {
+  display: flex; /* 보이게 함 */
+  animation: slideIn 0.5s forwards;
+}
+
+.menu a {
+  color: white; /* 텍스트 색상 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  font-size: 70px; /* 폰트 크기 */
+  margin-bottom: 10px; /* 각 링크 아래 여백 */
+  margin-top: 5%;
+  transition: ease 0.5s color;
+}
+
+.menu a:hover {
+  color: #00c8ff; /* 호버시 색상 변경 */
+}
+
+
+@media only screen and (max-width: 768px) {
   .header-logo {
-    text-decoration: none;
-    color: #00c8ff;
-    margin-left: 160%;
-    font-size: 70px;
-  }
-  .header-logo:visited {
-    text-decoration: none;
-  }
-  .header-container button{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-    border: 0 none;
-    border-radius: 6px;
-    color: #00c8ff;
-    background-color: transparent;
+    margin-left: 50%;
+    font-size: 50px;
   }
 
-  .nav-container {
-    cursor: pointer;
-  }
-  
-  .header-nav a{
-    text-decoration: none;
-  }
   nav ul {
-    list-style: none;
-    display: flex;
-    gap: 80%;
-    text-decoration: none;
-  }
-  nav ul li {
-    width: 100%; text-decoration: none;
-  }
-  nav ul:visited {
-    text-decoration: none;
+    margin-left: 30%;
   }
 
-  @media only screen and (max-width: 768px) {
-    .header-logo {
-      margin-left: 50%;
-      font-size: 50px;
-    }
-    nav ul {
-      margin-left: 30%;
-    }
-     nav ul li a{
-      margin-left: 0%;
-    }
+  nav ul li a {
+    margin-left: 0%;
   }
+}
