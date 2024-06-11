@@ -1,6 +1,14 @@
-body {
-  text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+   text-decoration: none;
   background-color: black;
+
 }
 
 .main-container {
@@ -12,6 +20,7 @@ body {
 
 .section1 {
   background-color: black;
+  margin-top: 15%;
 }
 
 .headline {
@@ -24,6 +33,7 @@ body {
   line-height: 0.8;
   user-select: none;
   animation: shine 2.0s infinite;
+  margin-bottom: 5%;
 }
 
 @keyframes shine {
