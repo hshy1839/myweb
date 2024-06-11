@@ -3,8 +3,7 @@
   margin: 0;
 }
 html, body {
-  width: 100%;
-  overflow-x: hidden; 
+  width: auto;
    text-decoration: none;
   background-color: black;
 
