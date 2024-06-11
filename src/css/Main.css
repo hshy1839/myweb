@@ -382,12 +382,13 @@ body {
 
 @media only screen and (max-width: 768px) {
   .headline {
-    margin-top: -20%;
+    margin-top: -30%;
     font-size: 100px;
   }
 
   .main-section1-images {
     margin-top: 30%;
+    position: relative;
   }
 
   .left-image {
