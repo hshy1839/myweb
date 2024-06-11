@@ -19,6 +19,7 @@ const Main = () => {
         { context: ' #NODEJS ' },
     ];
     useEffect(() => {
+        alert('제작 중,,, ');
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length);
         }, 2000); // Change every 2 seconds
