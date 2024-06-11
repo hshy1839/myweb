@@ -1,4 +1,11 @@
-.header-container {
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+   text-decoration: none;
+  background-color: black;
+
+}
+ .header-container {
   position: absolute;
   display: flex;
   align-items: center;
@@ -8,13 +15,13 @@
   z-index: 1000;
   color: #00c8ff;
   font-size: 40px;
+  margin-left: 70px;
 }
 
 .header-logo {
   text-decoration: none;
   color: white;
   margin-left: auto;
-  margin-right: auto;
   font-size: 70px;
 }
 
@@ -123,8 +130,7 @@
 
 .hamburger {
   cursor: pointer;
-  margin-left: auto;
-  margin-right: 5%;
+  margin-right: 10%;
   margin-top: 1%;
   z-index: 101;
 }
@@ -247,6 +253,20 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .header-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    color: #00c8ff;
+    font-size: 40px;
+    margin-left: 0px;
+    padding: 10px;
+  }
+
   .header-logo {
     margin-left: auto;
     margin-right: auto;
