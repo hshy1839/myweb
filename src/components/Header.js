@@ -46,7 +46,7 @@ const Header = () => {
               </div>
             </div>
           </Link>
-          <Link to="/qa">Q&A</Link>
+          <Link to="/QnA">Q&A</Link>
         </div>
       </label>
 

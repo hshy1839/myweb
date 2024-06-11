@@ -209,6 +209,162 @@ html, body {
   width: 90%;
   height: 900px;
 }
+.iphone-card {
+  margin-left: 40%;
+  margin-top: 10%;
+  width: 210px;
+  height: 400px;
+  background: black;
+  border-radius: 35px;
+  border: 2px solid rgb(40, 40, 40);
+  padding: 7px;
+  position: relative;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.486);
+  z-index: 0;
+}
+.iphone-card-int {
+  background-image: linear-gradient(to right bottom, #ff0000, #ff0045, #ff0078, #ea00aa, #b81cd7, #8a3ad6, #5746cf, #004ac2, #003d94, #002e66, #001d3a, #020812);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  height: 100%;
+  border-radius: 25px;
+  transition: all 0.6s ease-out;
+  overflow: hidden;
+}
+
+.iphone-card:hover .iphone-card-int {
+  background-position: 100% 100%;
+}
+
+.iphone-top {
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 35%;
+  height: 18px;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.iphone-speaker {
+  position: absolute;
+  top: 2px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 40%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgb(20, 20, 20);
+}
+
+.iphone-camera {
+  position: absolute;
+  top: 6px;
+  right: 84%;
+  transform: translate(50%, 0%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.048);
+}
+
+.iphone-int {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(0, 0, 255, 0.212);
+}
+
+.iphone-btn1, .iphone-btn2, .iphone-btn3, .iphone-btn4 {
+  position: absolute;
+  width: 2px;
+}
+
+.iphone-btn1, .iphone-btn2, .iphone-btn3 {
+  height: 45px;
+  top: 30%;
+  right: -4px;
+  background-image: linear-gradient(to right, #111111, #222222, #333333, #464646, #595959);
+}
+
+.iphone-btn2, .iphone-btn3 {
+  transform: scale(-1);
+  left: -4px;
+}
+
+.iphone-btn2, .iphone-btn3 {
+  transform: scale(-1);
+  height: 30px;
+}
+
+.iphone-btn2 {
+  top: 26%
+}
+
+.iphone-btn3 {
+  top: 36%
+}
+
+.iphone-hello {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.iphone-hidden {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.iphone-card:hover .iphone-hidden {
+  opacity: 1;
+}
+
+.iphone-card:hover .iphone-hello {
+  transform: translateY(-20px);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* When you change the amount of characters in the h1, you have to change 
+the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+if there is 20 put 20 */
+.iphone-text-animation {
+  font: bold 100% Consolas, Monaco, monospace;
+  border-right: .1em solid rgb(254, 254, 254);
+  width: 13.20ch;
+  margin: 2em 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 5s steps(13, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+.iphone-hidden {
+  font: bold 100% Consolas, Monaco, monospace;
+}
 
 .section3 {
   background-color: #00c8ff;
@@ -451,6 +607,9 @@ html, body {
       /* 끝 위치: 왼쪽으로 슬라이드 */
     }
   }
+  .iphone-card {
+    margin-left: 20%;
+  }
 
   .section2-headline {
     margin-top: 20%;
@@ -493,7 +652,6 @@ html, body {
 
   .section4-headline {
     font-size: 70px;
-    max-width: 90%;
   }
 
   .section4-media-title {
