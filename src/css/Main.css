@@ -392,9 +392,12 @@ html, body {
 @media only screen and (max-width: 768px) {
   .headline {
     margin-top: -30%;
-    font-size: 100px;
+    font-size: 70px;
   }
 
+  .work-button {
+    margin-top: 10%;
+  }
   .main-section1-images {
     margin-top: 30%;
     position: relative;
@@ -451,13 +454,13 @@ html, body {
 
   .section2-headline {
     margin-top: 20%;
-    font-size: 100px;
+    font-size: 70px;
     line-height: 0.8;
   }
 
   .section2-article {
     margin-top: 15%;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 20%;
   }
 
@@ -468,7 +471,7 @@ html, body {
   }
 
   .section3-headline {
-    font-size: 100px;
+    font-size: 70px;
   }
 
   .section3-image1 {
