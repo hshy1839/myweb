@@ -14,15 +14,28 @@ const Header = () => {
         </Link>
       </div>
       <div className="btn-container">
-        <button className='instagram-btn'> <a href="https://www.instagram.com/seokhyung98/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram style={{ color: '#DD2A7B', fontSize: '20px', marginRight: '10px' }} />
-        </a>Instagram</button>
-        <button className='mail-btn'><a href="mailto:hongjeongmin1839@gmail.com">
-          <FaEnvelope style={{ color: 'skyblue', fontSize: '20px ', marginRight: '10px' }} />
-        </a>Mail</button>
-        <button className='mail-btn'><a href="https://github.com/hshy1839/hshy1839">
-          <FaGithub style={{ color: 'white', fontSize: '20px ', marginRight: '10px' }} />
-        </a>Github</button>
+      <button className='instagram-btn'>
+  <a href="https://www.instagram.com/seokhyung98/" target="_blank" rel="noopener noreferrer">
+    <div>
+      <FaInstagram style={{ color: '#DD2A7B', fontSize: '20px', marginRight: '10px' }} />
+      Instagram
+    </div>
+  </a>
+</button>
+        <button className='mail-btn'><a href="mailto:hongjeongmin1839@gmail.com" target="_blank" rel="noopener noreferrer">
+          <div>
+            <FaEnvelope style={{ color: 'skyblue', fontSize: '20px ', marginRight: '10px' }} />
+            Mail
+            </div>
+            </a>
+            </button>
+        <button className='mail-btn'><a href="https://github.com/hshy1839/hshy1839" target="_blank" rel="noopener noreferrer">
+          <div>
+            <FaGithub style={{ color: 'white', fontSize: '20px ', marginRight: '10px' }} />
+            Github
+            </div>
+            </a>
+            </button>
       </div>
       <label className="hamburger">
         <input type="checkbox" />
@@ -37,10 +50,10 @@ const Header = () => {
                 <button className='menu-instagram-btn'> <a href="https://www.instagram.com/seokhyung98/" target="_blank" rel="noopener noreferrer">
                   <FaInstagram style={{ color: '#DD2A7B', fontSize: '20px', marginRight: '10px' }} />
                 </a>Instagram</button>
-                <button className='menu-mail-btn'><a href="mailto:hongjeongmin1839@gmail.com">
+                <button className='menu-mail-btn'><a href="mailto:hongjeongmin1839@gmail.com" target="_blank" rel="noopener noreferrer">
                   <FaEnvelope style={{ color: 'skyblue', fontSize: '20px ', marginRight: '10px' }} />
                 </a>Mail</button>
-                <button className='menu-mail-btn'><a href="https://github.com/hshy1839/hshy1839">
+                <button className='menu-mail-btn'><a href="https://github.com/hshy1839/hshy1839" target="_blank" rel="noopener noreferrer">
                   <FaGithub style={{ color: 'white', fontSize: '20px ', marginRight: '10px' }} />
                 </a>Github</button>
               </div>

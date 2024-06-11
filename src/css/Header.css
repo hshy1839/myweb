@@ -3,7 +3,10 @@ html, body {
   overflow-x: hidden; 
    text-decoration: none;
   background-color: black;
-
+}
+a {
+  color: inherit; /* 링크 색상을 부모 요소의 색상으로 상속 */
+  text-decoration: none; /* 밑줄 제거 */
 }
  .header-container {
   position: absolute;
@@ -55,6 +58,7 @@ html, body {
   outline: transparent;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .mail-btn::after, .instagram-btn::after {
@@ -170,13 +174,14 @@ html, body {
   display: none; /* 기본적으로 숨김 */
   background-color: black;
   opacity: 0.8;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
   top: 0px; /* 헤더 아래로 이동 */
   right: 0;
   padding: 20px;  
   width: 100%;
-  height: 700px;
+  height: 1000px;
+  z-index: 1003;
 }
 @keyframes slideIn {
   0% {
