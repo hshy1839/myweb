@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/Community.css';
 
-const Community = () => {
+const Notice = () => {
   return (
     <div className='community-container'>
-        <div className='community-section1'>
+        <div className='co2mmunity-section1'>
             <div className = 'community-menu'>
                 <div className = 'community-menu-title'>COMMUNITY</div>
                 <div className='community-menu-list'>
@@ -15,10 +15,10 @@ const Community = () => {
                 </div>
                 </div>
         <img src="../../images/cat6.jpeg" alt="Left" className="community-section1-image1" />
-        <div className='community-section1-content'>content</div>
+        <div className='community-section1-content'>Notice</div>
         </div>
     </div>
   );
 };
 
-export default Community;
+export default Notice;
