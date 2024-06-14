@@ -5,6 +5,7 @@ import '../App.css';
 
 const Main = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentBuddyImage, setCurrentBuddyImage] = useState(0);
 
     const skills = [
         { context: ' #JAVASCRIPT ' },
@@ -18,8 +19,25 @@ const Main = () => {
         { context: ' #EXPRESS ' },
         { context: ' #NODEJS ' },
     ];
+
+    const buddyImages = [
+        '../../images/buddy/main.jpg',
+        '../../images/buddy/profile.jpg',
+        '../../images/buddy/ces-d_main.jpg',
+        '../../images/buddy/ces-d.jpg',
+        '../../images/buddy/ces-d_result.jpg',
+        '../../images/buddy/sentiment_calendar.jpg',
+        '../../images/buddy/sentiment_form.jpg', 
+        '../../images/buddy/analysis_sentiment.jpg',
+        '../../images/buddy/lifecycle.jpg',
+        '../../images/buddy/post.jpg',
+        '../../images/buddy/post_detail.jpg',
+        '../../images/buddy/signup.jpg',
+        '../../images/buddy/mypage_edit.jpg',
+    ];
+
     useEffect(() => {
-        alert('제작 중,,, ');
+        // alert('제작 중,,, ');
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % skills.length);
         }, 2000); // Change every 2 seconds
@@ -27,6 +45,21 @@ const Main = () => {
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentBuddyImage((prevIndex) => (prevIndex + 1) % buddyImages.length);
+        }, 1500); // Change image every 1 second
+
+        return () => clearInterval(interval);
+    }, [buddyImages.length]);
+
+    const handleNextImage = () => {
+        setCurrentBuddyImage((prevIndex) => (prevIndex + 1) % buddyImages.length);
+    };
+
+    const handlePrevImage = () => {
+        setCurrentBuddyImage((prevIndex) => (prevIndex - 1 + buddyImages.length) % buddyImages.length);
+    };
 
     return (
         <div className='main-container'>
@@ -67,22 +100,22 @@ const Main = () => {
                     READ THE WORDS BACK AND DON’T HEAR YOUR OWN VOICE IN YOUR HEAD, THAT’S A GOOD SIGN YOU <br />
                     STILL HAVE MORE WORK TO DO.<br />
                 </div>
-                <div class="iphone-card">
-
-                    <div class="iphone-btn1"></div>
-                    <div class="iphone-btn2"></div>
-                    <div class="iphone-btn3"></div>
-                    <div class="iphone-btn4"></div>
-                    <div class="iphone-card-int">
-                        <div class="iphone-hello"><div class="iphone-text-animation">hello</div>
-                            <span class="iphone-hidden">world</span>
+                <div className="iphone-card">
+                    <div className="iphone-btn1"></div>
+                    <div className="iphone-btn2"></div>
+                    <div className="iphone-btn3"></div>
+                    <div className="iphone-btn4"></div>
+                    <div className="iphone-card-int">
+                        <div className="iphone-hello">
+                            <div className="iphone-text-animation">hello</div>
+                            <span className="iphone-hidden">world</span>
                         </div>
                     </div>
-                    <div class="iphone-top">
-                        <div class="iphone-camera">
-                            <div class="iphone-int"></div>
+                    <div className="iphone-top">
+                        <div className="iphone-camera">
+                            <div className="iphone-int"></div>
                         </div>
-                        <div class="iphone-speaker"></div>
+                        <div className="iphone-speaker"></div>
                     </div>
                 </div>
             </div>
@@ -113,7 +146,7 @@ const Main = () => {
                     01. LULULALAZON
                 </div>
                 <div className='section4-media-container'>
-                    <img src="../../images/cat9.jpeg" alt="Left" className="section4-image1" />
+                    <img src="../../images/lululalazon.gif" alt="Left" className="section4-image1" />
                     <div className='section4-media-context'>
                         PROJECT<br />: The Lululala Zone Fitness Center Website Project<br /><br />
                         USED SKILLS<br />: PYCHARM, PYTHON, EJS, CSS, JAVASCRIPT, SQLLITE, EC2, GITHUB <br />
@@ -125,8 +158,12 @@ const Main = () => {
                 <div className='section4-media-title'>
                     02. BUDDY
                 </div>
-                <div className='section4-media-container'>
-                    <img src="../../images/cat8.jpeg" alt="Left" className="section4-image1" />
+                <div className='section4-media-container  '> 
+                    <div className="arrow-buttons">
+                        <button onClick={handlePrevImage} className="prev-arrow"> &lt; </button>
+                        <img src={buddyImages[currentBuddyImage]} alt="Buddy" className="section4-image2" /> 
+                        <button onClick={handleNextImage} className="next-arrow"> &gt; </button>
+                    </div>
                     <div className='section4-media-context'>
                         PROJECT<br />: Buddy Mobile App, Website, and Wearable App Project<br /><br />
                         USED SKILLS<br />: REACT-NATIVE, REACT, kotlin, CSS, express, mysql, android studio, GITHUB, jira <br />

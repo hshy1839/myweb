@@ -3,7 +3,7 @@
   margin: 0;
 }
 html, body {
-  width: auto;
+  width: 100%;
    text-decoration: none;
   background-color: black;
 
@@ -484,6 +484,7 @@ if there is 20 put 20 */
   height: 500px;
 }
 
+
 .section4-media-context {
   text-align: left;
   margin-left: 3%;
@@ -491,10 +492,48 @@ if there is 20 put 20 */
   line-height: 1.8;
 }
 
+.section4-image2 {
+  margin-top: 500px;
+  width: 500px;
+  max-height: 500px;
+  object-fit: contain;
+  position: relative;
+  margin-left: auto;
+}
+
+.arrow-buttons {
+  margin-left: 5%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev-arrow, .next-arrow {
+  background-color: transparent;
+  color: white;
+  opacity: 1;
+  border: none;
+  margin-top: 70%;
+  cursor: pointer;
+  font-size: 80px;
+  transition: ease 0.3s color;
+}
+
+.prev-arrow:hover, .next-arrow:hover {
+  background-color: transparent;
+  color: grey;
+  opacity: 1;
+  border: none;
+  margin-top: 70%;
+  cursor: pointer;
+  font-size: 80px;
+}
+
+
 .section4-button {
   cursor: pointer;
   width: 15%;
-  margin-top: 5%;
   --glow-color: #00c8ff;
   --glow-spread-color: #0297c0;
   --enhanced-glow-color: #00c8ff;
@@ -666,6 +705,50 @@ if there is 20 put 20 */
     width: 85%;
     height: auto;
   }
+
+  .section4-image2 {
+    margin-left: 5%;
+    width: 40%;
+    height: 600px;
+    object-fit: contain;
+  }
+  .section4-image2 {
+    margin-top: 400px;
+    width: 200px;
+    max-height: 500px;
+    object-fit: contain;
+    position: relative;
+    margin-bottom: -100%;
+  }
+  
+  .arrow-buttons {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .prev-arrow, .next-arrow {
+    background-color: transparent;
+    color: white;
+    opacity: 1;
+    border: none;
+    margin-top: 190%;
+    cursor: pointer;
+    font-size: 40px;
+    transition: ease 0.3s color;
+    padding: 10px;
+  }
+
+  .prev-arrow:hover, .next-arrow:hover {
+    background-color: transparent;
+    color: grey;
+    opacity: 1;
+    border: none;
+    margin-top: 190%;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  
 
   .section4-media-context {
     margin-top: 10%;
