@@ -8,6 +8,13 @@ html, body {
   background-color: black;
 }
 
+.section1, .section2, .section3, .section4 {
+  width: 100%; /* 각 섹션을 화면 너비에 맞게 설정 */
+  padding: 50px 0; /* 적절한 여백 설정 */
+  color: #00c8ff; /* 글자색 설정 */
+  text-align: center; /* 가운데 정렬 */
+}
+
 .main-container {
   position: absolute;
   width: 100%;
@@ -584,8 +591,8 @@ if there is 20 put 20 */
 
 @media only screen and (max-width: 768px) {
   
-html, body {
-  width: 100%;
+.main-container {
+  overflow-x: hidden;
 }
   .headline {
     margin-top: -30%;
@@ -615,7 +622,7 @@ html, body {
   }
 
   .skills-container {
-    width: 100%;
+    width: auto;
     height: 50px;
     margin-top: 12%;
   }
@@ -651,7 +658,6 @@ html, body {
   .iphone-card {
     margin-left: 20%;
   }
-
   .section2-headline {
     margin-top: 20%;
     font-size: 70px;
@@ -669,7 +675,6 @@ html, body {
     height: 350px;
     width: 300px;
   }
-
   .section3-headline {
     font-size: 70px;
   }
@@ -728,6 +733,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
+    margin-bottom: -30%;
   }
   
   .prev-arrow, .next-arrow {
