@@ -6,7 +6,6 @@ html, body {
   width: 100%;
    text-decoration: none;
   background-color: black;
-
 }
 
 .main-container {
@@ -584,6 +583,10 @@ if there is 20 put 20 */
 }
 
 @media only screen and (max-width: 768px) {
+  
+html, body {
+  width: 100%;
+}
   .headline {
     margin-top: -30%;
     font-size: 70px;
@@ -689,7 +692,7 @@ if there is 20 put 20 */
   }
 
   .section4-headline {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .section4-media-title {
