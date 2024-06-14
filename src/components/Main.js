@@ -61,11 +61,18 @@ const Main = () => {
         setCurrentBuddyImage((prevIndex) => (prevIndex - 1 + buddyImages.length) % buddyImages.length);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+
     return (
         <div className='main-container'>
+            <button className="top-button" onClick={scrollToTop}>↑<br/>
+                    Top
+                </button>
             <div className='section1'>
                 <div className="main-section1-images">
-                    <img src="../../images/cat7.jpeg" alt="Left" className="left-image" />
                     <img src="../../images/cat4.jpeg" alt="Right" className="right-image" />
                 </div>
                 <h1 className="headline">
@@ -90,16 +97,7 @@ const Main = () => {
                 <div className='section2-headline'>
                     GET PAID TO <i>CREATE</i>
                 </div>
-                <div className='section2-article'>
-                    IT ALL BEGINS WITH AN IDEA. MAYBE YOU WANT TO LAUNCH A BUSINESS. MAYBE YOU WANT TO TURN A <br />
-                    HOBBY INTO SOMETHING MORE. OR MAYBE YOU HAVE A CREATIVE PROJECT TO SHARE WITH THE WORLD. <br />
-                    WHATEVER IT IS, THE WAY YOU TELL YOUR STORY ONLINE CAN MAKE ALL THE DIFFERENCE.<br />
-                    <br />
-                    DON’T WORRY ABOUT SOUNDING PROFESSIONAL. SOUND LIKE YOU. THERE ARE OVER 1.5 BILLION <br />
-                    WEBSITES OUT THERE, BUT YOUR STORY IS WHAT’S GOING TO SEPARATE THIS ONE FROM THE REST. IF YOU <br />
-                    READ THE WORDS BACK AND DON’T HEAR YOUR OWN VOICE IN YOUR HEAD, THAT’S A GOOD SIGN YOU <br />
-                    STILL HAVE MORE WORK TO DO.<br />
-                </div>
+                <div className='section2-context-container'>
                 <div className="iphone-card">
                     <div className="iphone-btn1"></div>
                     <div className="iphone-btn2"></div>
@@ -117,6 +115,17 @@ const Main = () => {
                         </div>
                         <div className="iphone-speaker"></div>
                     </div>
+                </div>
+                <div className='section2-article'>
+                    IT ALL BEGINS WITH AN IDEA. MAYBE YOU WANT TO LAUNCH A BUSINESS. MAYBE YOU WANT TO TURN A <br />
+                    HOBBY INTO SOMETHING MORE. OR MAYBE YOU HAVE A CREATIVE PROJECT TO SHARE WITH THE WORLD. <br />
+                    WHATEVER IT IS, THE WAY YOU TELL YOUR STORY ONLINE CAN MAKE ALL THE DIFFERENCE.<br />
+                    <br />
+                    DON’T WORRY ABOUT SOUNDING PROFESSIONAL. SOUND LIKE YOU. THERE ARE OVER 1.5 BILLION <br />
+                    WEBSITES OUT THERE, BUT YOUR STORY IS WHAT’S GOING TO SEPARATE THIS ONE FROM THE REST. IF YOU <br />
+                    READ THE WORDS BACK AND DON’T HEAR YOUR OWN VOICE IN YOUR HEAD, THAT’S A GOOD SIGN YOU <br />
+                    STILL HAVE MORE WORK TO DO.<br />
+                </div>      
                 </div>
             </div>
             <div className='section3'>

@@ -43,7 +43,7 @@ const Header = () => {
             </button>
         <button className='mail-btn'><a href="https://github.com/hshy1839/" target="_blank" rel="noopener noreferrer">
           <div>
-            <FaGithub style={{ color: 'white', fontSize: '20px ', marginRight: '10px' }} />
+            <FaGithub style={{ color: 'black', fontSize: '20px ', marginRight: '10px' }} />
             Github
             </div>
             </a>
