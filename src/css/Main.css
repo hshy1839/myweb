@@ -623,7 +623,7 @@ if there is 20 put 20 */
   }
   .headline {
     margin-top: 30%;
-    font-size: 40px;
+    font-size: 45px;
   }
   .headline-container {
     flex-direction: column;
@@ -632,7 +632,7 @@ if there is 20 put 20 */
     line-height: 1.2;
   }
   .headline-korean {
-    font-size: 6px;
+    font-size: 6.5px;
     margin-top: 1%;
   }
   .iphone-card {
@@ -661,15 +661,19 @@ if there is 20 put 20 */
     background-color: white;
     color: black;
   }
+  .scroll_container {
+    justify-content: center;
+  }
   .main__action {
-    position: absolute;
-    bottom: -10%;
-    align-self: center; 
-    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-self: center;
     z-index: 10; 
     width: 80px;
+    margin-top: 30%;
+    left: 0;
+    top: 0;
     font-size: 30px;
-    margin-left: 25%;
   }
   .section2 {
     flex-direction: column;
