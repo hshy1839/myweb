@@ -21,6 +21,7 @@ html, body {
   width: 100%;
   height: 100%;
 }
+.main-container.scrolled,
 .main-container.scrolled .section2,
 .main-container.scrolled .section3,
 .main-container.scrolled .section4{
@@ -159,9 +160,12 @@ html, body {
 }
 .section2-headline {
   position: relative;
-  font-size: 230px;
+  font-size: 200px;
   font-weight: bold;
   z-index: 2;
+  text-align: left;
+  margin-top: 25%;
+  margin-left: 10%;
   font-family: 'Bebas Neue';
   user-select: none;
 }
@@ -169,22 +173,57 @@ html, body {
   display: flex;
   flex-direction: row;
 }
+.section2-article-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.section2-article-context {
+  font-size: 20px;
+  margin-top: 7%;
+}
 .section2-image1 {
   z-index: 1;
   margin-left: 10%;
-  height: 500px;
+  height: 700px;
   width: 50%;
   margin-top: 8%;
   opacity: 0.8;
 }
+.section2-article-title2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.section2-article-context2 {
+  font-size: 20px;
+  margin-top: 7%;
+}
+.section2-image2 {
+  z-index: 1;
+  margin-left: 40%;
+  height: 700px;
+  width: 50%;
+  margin-top: 8%;
+  opacity: 0.8;
+}
+
 .section2-article {
   position: absolute;
   z-index: 2;
   font-size: 35px;
-  margin-left: 40%;
-  margin-top: 10%;
-  text-align: right;
-}
+  margin-left: 50%;
+  margin-top: 23%;
+  text-align: left;
+  font-weight: bold;
+  }
+.section2-article2 {
+  position: absolute;
+  z-index: 2;
+  font-size: 35px;
+  margin-left: 12%;
+  margin-top: 20%;
+  text-align: left;
+  font-weight: bold;
+  }
 
 .iphone-card {
   width: 320px;
@@ -349,6 +388,7 @@ if there is 20 put 20 */
 }
 
 .section3-headline {
+  margin-top: 20%;
   font-size: 250px;
   font-weight: bold;
   z-index: 2;
@@ -356,72 +396,118 @@ if there is 20 put 20 */
   font-family: 'Bebas Neue';
   user-select: none;
 }
-
-.section3-image1 {
-  width: 40%;
+.section3-skills-container {
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
 }
-
-.section3-article {
-  margin-top: 3%;
-  font-size: 25px;
-  text-align: center;
-}
-
-.section3-button {
-  cursor: pointer;
-  margin-top: 5%;
-  --glow-color: #f9fbfc;
-  --glow-spread-color: #f0f0f0;
-  --enhanced-glow-color: #e6e7e7;
-  --btn-color: #00c8ff;
-  border: .25em solid var(--glow-color);
-  padding: 1em 3em;
-  color: var(--glow-color);
-  font-size: 15px;
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 15em;
+.section3-skills {
+  margin-left: 3%;
+  background-color: rgb(36, 35, 35, 0.7);
+  border: 1px solid black;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  align-items: center;position: relative;
+  padding: 0.8em 1em;
   outline: none;
-  box-shadow: 0 0 1em .25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 .75em .25em var(--glow-color);
-  text-shadow: 0 0 .5em var(--glow-color);
-  position: relative;
-  transition: all 0.3s;
-  margin-bottom: 5%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: #111111;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.section3-skills:hover {
+  animation: sh0 0.5s ease-in-out both;
 }
 
-.section3-button:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  box-shadow: 0 0 1em .25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
-    inset 0 0 .75em .25em var(--glow-color);
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
 }
 
-.section3-button::after {
-  pointer-events: none;
-  content: "";
+.section3-skills:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+.section3-skills::before,
+.section3-skills::after {
+  content: '';
   position: absolute;
-  top: 120%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: .7;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
 }
 
-.section3-button:active {
-  box-shadow: 0 0 0.6em .25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 .5em .25em var(--glow-color);
+.section3-skills:hover::before,
+.section3-skills:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.section3-skills:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+.section3-skills:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+.section3-skills-image {
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+}
+.section3-skills-text {
+  font-size: 30px;
 }
 /* 
 .section4 {
 } */
 
+.section3-skills-container2 {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
 .section4-headline {
   margin-left: 5%;
   text-align: left;
