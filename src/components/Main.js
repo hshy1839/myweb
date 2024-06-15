@@ -39,15 +39,28 @@ const Main = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 1300 && window.scrollY <= 5500) {
+            const screenWidth = window.innerWidth;
+            let scrollYMin, scrollYMax;
+    
+            if (screenWidth <= 768) {
+                // 모바일 화면
+                scrollYMin = 1400;
+                scrollYMax = 3500;
+            } else {
+                // 데스크탑 화면
+                scrollYMin = 1300;
+                scrollYMax = 5500;
+            }
+    
+            if (window.scrollY >= scrollYMin && window.scrollY <= scrollYMax) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
             }
         };
-
+    
         window.addEventListener('scroll', handleScroll);
-
+    
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -134,15 +147,6 @@ const Main = () => {
                             </a>
                         </div>
                     </div>
-                    {/* <div className='skills-container'>
-                    <div className='skills-display'>
-                        {skills.map((skill, index) => (
-                            <div key={index} className="skills">
-                                {skill.context}
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
                 </div>
                 <div className='section2'>
                     <div className='section2-headline'>introduce</div>
@@ -160,7 +164,7 @@ const Main = () => {
                         </div>
 
                     </div>
-                    <div className='section2-context-container'>
+                    <div className='section2-context-container2'>
                         <div className='section2-article2'>
                             <div className='section2-article-title2'>
                                 책임감과 신뢰성이<br />
@@ -278,7 +282,7 @@ const Main = () => {
                     <div className='section4-media-title'>
                         02. BUDDY
                     </div>
-                    <div className='section4-media-container  '>
+                    <div className='section4-media-container'>
                         <div className="arrow-buttons">
                             <button onClick={handlePrevImage} className="prev-arrow"> &lt; </button>
                             <img src={buddyImages[currentBuddyImage]} alt="Buddy" className="section4-image2" />

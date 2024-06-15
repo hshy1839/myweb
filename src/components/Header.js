@@ -5,20 +5,6 @@ import '../css/Header.css';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // State 업데이트 시 애니메이션 효과 주기
-  useEffect(() => {
-    const menuElement = document.querySelector('.menu');
-
-    if (menuOpen) {
-      // 메뉴 열기
-      menuElement.style.height = '500px'; // 원하는 높이 설정
-      menuElement.style.opacity = '1'; // 투명도 설정
-    } else {
-      // 메뉴 닫기
-      menuElement.style.height = '0'; // 높이 초기화
-      menuElement.style.opacity = '0'; // 투명도 초기화
-    }
-  }, [menuOpen]);
 
   const handleMouseEnter = () => {
     setMenuOpen(true);
