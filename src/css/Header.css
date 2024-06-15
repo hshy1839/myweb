@@ -1,13 +1,8 @@
-html, body {
-  width: 100%;
-  overflow-x: hidden; 
-   text-decoration: none;
-}
+/* Header.css */
 a {
-  color: inherit; /* 링크 색상을 부모 요소의 색상으로 상속 */
-  text-decoration: none; /* 밑줄 제거 */
+  text-decoration: none;
 }
- .header-container {
+.header-container {
   position: absolute;
   display: flex;
   align-items: center;
@@ -21,24 +16,13 @@ a {
 .header-logo {
   text-decoration: none;
   color: black;
-  margin-left: auto;
-  font-size: 50px;
-  margin-left: 70px;
-}
-
-.header-logo:visited {
-  text-decoration: none;
+  margin-left: 70px; /* margin-left을 중복으로 설정하지 않도록 수정 */
 }
 
 .btn-container {
-  cursor: pointer;
   margin-left: 30%;
   display: flex;
   width: auto;
-}
-
-.header-nav a {
-  text-decoration: none;
 }
 
 .header-button {
@@ -48,20 +32,18 @@ a {
   font-size: 18px;
   background-color: transparent;
   border: none;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: black;
   cursor: pointer;
   text-decoration: none;
 }
-.header-button:hover {
-  border-bottom: 5px solid black;
-}
 
 .menu {
   width: 100%;
-  height: 500px;
+  height: 0; /* 초기에는 메뉴가 숨겨져 있도록 설정 */
+  opacity: 0; /* 초기에는 투명도를 0으로 설정 */
   position: absolute;
   top: 100%;
   left: 0;
@@ -69,84 +51,64 @@ a {
   border-top: 1px solid lightgray;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  flex-direction: column;
-}
-.menu-item-title{
-  padding: 10px 20px;
-  margin-top: 25%;
-  font-size: 18px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
-}
-.menu-item {
-  padding: 10px 20px;
-  white-space: nowrap;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 18px;
-  margin-top: 20%;
-  color: gray;
-  font-weight: 0;
-}
-.menu-item-container {
-  width: auto;
+  overflow: hidden; 
   display: flex;
-  margin-left: 30%;
-  margin-right: -30%;
+  flex-direction: row;
+  transition: height 0.5s ease, opacity 0.5s ease; 
+}
+
+.menu.open {
+  height: 500px; /* 메뉴가 열렸을 때의 높이 설정 */
+  opacity: 1; /* 메뉴가 열렸을 때의 투명도 설정 */
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item-container {
+  width: 180px;
+  display: flex;
   flex-direction: column;
   border-left: 1px solid lightgray;
   text-align: left;
 }
 .menu-item-container:last-child {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
 }
 
-.header-container:hover .menu, .menu:hover {
-  display: flex;
-  flex-direction: row;
-}
-@media only screen and (max-width: 768px) {
-  .header-container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    z-index: 1000;
-    color: #00c8ff;
-    font-size: 40px;
-    margin-left: 0px;
-    padding: 10px;
-  }
-
-  .header-logo {
-    margin-left: 30%;
-    margin-right: auto;
-    font-size: 50px;
-  }
-  .btn-container {
-    display: none;
-  }
-  .hamburger {
-    margin-left: auto;
-    margin-right: 5%;
-    margin-top: 5%;
-  }
-  .menu a {
-    font-size: 60px;
-    margin-top: 15%;
-  }
-  .menu {
-    width: 100%;
-  }
-  .menu-contact a {
-    font-size: 24px;
-  }
-  .menu-contact a:hover {
-    color: tomato;
-  }
+.menu-item-title {
+  padding: 10px 20px;
+  margin-top: 15px; /* % 단위를 px로 변경 */
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
 }
 
+.menu-item {
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 10px; /* % 단위를 px로 변경 */
+  color: gray;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.menu-item::after {
+  content: ''; /* 가상 요소 내용 설정 */
+  position: absolute; /* 절대 위치 설정 */
+  left: 15px; /* 왼쪽 위치 설정 */
+  bottom: 0; /* 아래쪽 위치 설정 */
+  width: 0; /* 초기 너비 설정 */
+  height: 2px; /* 선 높이 설정 */
+  background-color: black; /* 선 색상 설정 */
+  transition: width 0.5s ease; /* 선의 너비 변경에 대한 transition 설정 */
+}
+
+.menu-item:hover {
+  color: black; /* hover 시 텍스트 색상을 검은색으로 변경 */
+}
+
+.menu-item:hover::after {
+  width: 60%; /* hover 시 선의 너비를 100%로 확장 */
+}
