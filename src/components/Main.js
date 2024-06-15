@@ -39,7 +39,7 @@ const Main = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 1300 && window.scrollY <= 6000) {
+            if (window.scrollY >= 1300 && window.scrollY <= 5500) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
@@ -96,11 +96,10 @@ const Main = () => {
                         <h1 className="headline">
                             <i>Turning imagination</i><br />
                             <div className='headline-text'>
-                                into reality<span className='headline-korean'>독보적인 창작의 결과물을 만들고<br />
-                                    확장하고 재창조함으로써 팬들이 경험하는<br />
-                                    엔터테인먼트의 순간들을 무한히 연결하는<br />
-                                    세계를 만들 것입니다. 우리가 완성할<br />
-                                    그곳에서, 모두와 만나겠습니다.</span></div>
+                                into reality<span className='headline-korean'>
+                                창의적인 아이디어를 코드로 구현하여 <br/>무한한 가능성을 열어갑니다.<br />
+                                혁신적인 솔루션으로 꿈을 실현하며, <br/>새로운 세상을 창조합니다.<br />
+                                상상이 현실이 되는 순간을 함께 경험해보세요.</span></div>
                             <i>full-stack DEVELOPER</i><br />
                         </h1>
                         <div className="iphone-card">
@@ -293,9 +292,6 @@ const Main = () => {
                             WHATEVER IT IS, THE WAY YOU TELL YOUR STORY ONLINE CAN MAKE ALL THE DIFFERENCE.  <br />
                         </div>
                     </div>
-                    <button className="section4-button">
-                        GET STARTED →
-                    </button>
                 </div>
             </div>
         </div>

@@ -32,235 +32,82 @@ a {
 
 .btn-container {
   cursor: pointer;
-  margin-left: 5%;
-  margin-right: auto;
+  margin-left: 30%;
+  display: flex;
+  width: auto;
 }
 
 .header-nav a {
   text-decoration: none;
 }
 
-.mail-btn, .instagram-btn,
-.instagram-btn::after,
-.mail-btn::after {
-  padding: 16px 20px;
+.header-button {
+  width: auto;
+  height: auto;
+  margin-left: 30%;
   font-size: 18px;
-  background: linear-gradient(45deg, transparent 5%, transparent 5%);
-  border: 0;
-  font-family: 'Bebas Neue';
-  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 22px;
   font-weight: bold;
-  letter-spacing: 3px;
   color: black;
-  line-height: 0.5;
-  outline: transparent;
-  position: relative;
   cursor: pointer;
   text-decoration: none;
 }
-
-.mail-btn::after, .instagram-btn::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  content: "Clicked";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #ff013c 3%, #ff013c 5%, #00e6f6 5%);
-  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #ff013c;
-  clip-path: var(--slice-0);
+.header-button:hover {
+  border-bottom: 5px solid black;
 }
 
-.mail-btn:hover::after, .instagram-btn:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
-
-@keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
-
-.hamburger {
-  cursor: pointer;
-  margin-right: 10%;
-  margin-top: 1%;
-  z-index: 1001;
-}
-
-.hamburger input {
-  display: none;
-}
-
-.hamburger svg {
-  height: 1.2em;
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line {
-  fill: none;
-  stroke: black;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.line-top-bottom {
-  stroke-dasharray: 12 63;
-}
-
-.hamburger input:checked + svg {
-  transform: rotate(-45deg);
-  z-index: 2000; /* 체크된 상태에서 z-index 설정 */
-}
-
-.hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
-}
 .menu {
-  display: none; /* 기본적으로 숨김 */
-  background-color: rgb(0, 0, 0, 0.95);
-  position: absolute;
-  flex-direction: column;
-  top: 0px; /* 헤더 아래로 이동 */
-  right: 0;
-  padding: 20px;  
   width: 100%;
-  height: 1000px;
-  z-index: 100;
+  height: 500px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid lightgray;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-direction: column;
 }
-@keyframes slideIn {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.menu-item-title{
+  padding: 10px 20px;
+  margin-top: 25%;
+  font-size: 18px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
 }
-
-.hamburger input:checked ~ .menu {
-  display: flex; /* 보이게 함 */
-  animation: slideIn 0.5s forwards;
+.menu-item {
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 20%;
+  color: gray;
+  font-weight: 0;
 }
-
-.menu a {
-  color: white; /* 텍스트 색상 */
-  text-decoration: none; /* 링크 밑줄 제거 */
-  font-size: 70px; /* 폰트 크기 */
-  margin-bottom: 10px; /* 각 링크 아래 여백 */
-  margin-top: 5%;
-  transition: ease 0.5s color;
+.menu-item-container {
+  width: auto;
+  display: flex;
+  margin-left: 30%;
+  margin-right: -30%;
+  flex-direction: column;
+  border-left: 1px solid lightgray;
+  text-align: left;
 }
-
-.menu a:hover {
-  color: #00c8ff; /* 호버시 색상 변경 */
-}
-.menu-contact {
-  display: none; /* 기본적으로 숨기기 */
-  flex-direction: column; /* 세로로 나열하기 */
-  gap: 10px; /* 버튼들 사이의 간격 */
-  background-color: transparent;
-}
-.menu-contact button {
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  border: none;
-  font-size: 20px;
-}
-.menu-contact a {
-  font-size: 24px;
-}
-.menu-contact a:hover {
-  color: tomato;
-}
-.menu-contact button:hover {
-  transition: 0.5s ease color;
-  color: tomato;
-}
-.menu-contact-container:hover .menu-contact {
-  display: flex; /* 호버 시 보이기 */
-}
-.menu-contact-container:hover .menu-contact button {
-  animation: menuContactslideIn 0.6s ease-in-out forwards;
+.menu-item-container:last-child {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
-.menu-contact-container:hover .menu-contact button:nth-child(1) {
-  animation-delay: 0s;
+.header-container:hover .menu, .menu:hover {
+  display: flex;
+  flex-direction: row;
 }
-
-.menu-contact-container:hover .menu-contact button:nth-child(2) {
-  animation-delay: 0.2s;
-  opacity: 0;
-}
-
-.menu-contact-container:hover .menu-contact button:nth-child(3) {
-  animation-delay: 0.4s;
-  opacity: 0;
-}
-@keyframes menuContactslideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .header-container {
     position: absolute;
