@@ -616,9 +616,14 @@ if there is 20 put 20 */
 }
 
 @media only screen and (max-width: 768px) {
+  
+  .main-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .headline {
     margin-top: 30%;
-    font-size: 55px;
+    font-size: 40px;
   }
   .headline-container {
     flex-direction: column;
@@ -627,7 +632,7 @@ if there is 20 put 20 */
     line-height: 1.2;
   }
   .headline-korean {
-    font-size: 8px;
+    font-size: 6px;
     margin-top: 1%;
   }
   .iphone-card {
@@ -640,13 +645,13 @@ if there is 20 put 20 */
     font-size: 20px;
   }
   .top-button {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     line-height: 1.5;
     z-index: 1000;
-    top: 92%;
-    left: 65%;
+    top: 90%;
+    left: 80%;
     transition: ease 0.5s background-color;
     font-size: 15px;
     font-weight: bolder;
@@ -824,8 +829,9 @@ if there is 20 put 20 */
   }
 
   .section4-media-context {
+    padding: 15px;
     margin-top: 10%;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5;
     margin-bottom: 30%;
   }
