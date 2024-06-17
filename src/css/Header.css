@@ -176,3 +176,9 @@ a {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 360px) {
+  .menu {
+    width: 103%;
+  }
+}
