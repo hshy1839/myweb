@@ -48,7 +48,7 @@ const Main = () => {
                 scrollYMax = 3500;
             } else {
                 // 데스크탑 화면
-                scrollYMin = 1300;
+                scrollYMin = 1200;
                 scrollYMax = 5500;
             }
     
