@@ -122,7 +122,8 @@ a {
     
   }
   .btn-container {
-    margin-left: 32%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 10px;
   }
