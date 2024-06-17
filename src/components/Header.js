@@ -6,20 +6,24 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (e) => {
     setMenuOpen(true);
+    e.preventDefault();
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (e) => {
     setMenuOpen(false);
+    e.preventDefault();
   };
 
-  const handleHeaderMouseEnter = () => {
+  const handleHeaderMouseEnter = (e) => {
     setMenuOpen(true);
+    e.preventDefault();
   };
 
-  const handleHeaderMouseLeave = () => {
+  const handleHeaderMouseLeave = (e) => {
     setMenuOpen(false);
+    e.preventDefault();
   };
 
   return (

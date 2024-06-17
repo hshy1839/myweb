@@ -91,11 +91,13 @@ const Main = () => {
         setCurrentBuddyImage((prevIndex) => (prevIndex - 1 + buddyImages.length) % buddyImages.length);
     };
 
-    const scrollToTop = () => {
+    const scrollToTop = (e) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        e.preventDefault();
     };
-    const scrollToSection2 = () => {
-        window.scrollTo({ top: 1000, behavior: 'smooth' });
+    const scrollToSection2 = (e) => {
+        window.scrollTo({ top: 1500, behavior: 'smooth' });
+        e.preventDefault();
     };
 
     return (
