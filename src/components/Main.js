@@ -44,8 +44,8 @@ const Main = () => {
     
             if (screenWidth <= 768) {
                 // 모바일 화면
-                scrollYMin = 1400;
-                scrollYMax = 3500;
+                scrollYMin = 1200;
+                scrollYMax = 3400;
             } else {
                 // 데스크탑 화면
                 scrollYMin = 1200;

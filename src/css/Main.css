@@ -564,7 +564,7 @@ if there is 20 put 20 */
 @media only screen and (max-width: 768px) {
   
   .main-container {
-    max-width: 100%;
+    max-width:100%;
     overflow-x: hidden;
   }
   .headline {
