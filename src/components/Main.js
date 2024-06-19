@@ -297,7 +297,9 @@ const Main = () => {
                             HOBBY INTO SOMETHING MORE. OR MAYBE YOU HAVE A CREATIVE PROJECT TO SHARE WITH THE WORLD. <br />
                             WHATEVER IT IS, THE WAY YOU TELL YOUR STORY ONLINE CAN MAKE ALL THE DIFFERENCE.  <br />
                         </div>
+
                     </div>
+                    <button className='more_btn'>see more</button>
                 </div>
             </div>
         </div>
