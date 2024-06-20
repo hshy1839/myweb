@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import DevStory from './components/DevStory';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       
         <Routes>
           <Route path="/" element={<><Header /><Main /><Footer /></>} />
+          <Route path="/devstory" element={<><Header /><DevStory /><Footer /></>} />
         </Routes>
  
       </div>

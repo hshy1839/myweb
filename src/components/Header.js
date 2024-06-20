@@ -42,9 +42,9 @@ const Header = () => {
         <div className={`menu ${menuOpen ? 'open' : ''}`}>
           <div className='menu-item-container'>
             <span className='menu-item-title'>About</span>
-            <Link to="" className="menu-item">개발자 이야기</Link>
+            <Link to="/devstory" className="menu-item">개발자 스토리</Link>
             <Link to="" className="menu-item">도전의 역사</Link>
-            <Link to="" className="menu-item">Contact Us</Link>
+            <Link to="" className="menu-item">Awards</Link>
           </div>
           <div className='menu-item-container'>
             <span className='menu-item-title'>Contact</span>
@@ -55,7 +55,7 @@ const Header = () => {
           <div className='menu-item-container'>
             <span className='menu-item-title'>News</span>
             <Link to="" className="menu-item">공지사항</Link>
-            <Link to="" className="menu-item">알림</Link>
+            <Link to="" className="menu-item">QnA</Link>
             <Link to="" className="menu-item">게시판</Link>
           </div>
         </div>

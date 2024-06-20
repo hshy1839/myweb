@@ -1,0 +1,149 @@
+.devstory-container {
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+.section1, .section2, .section3 { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section1-headline-container {
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section1-headline {
+    font-size: 90px;
+    margin-right: 40%;
+}
+.section1-headline-link {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    /* color: black; */
+}
+.section1-headline-link a  {
+    text-decoration: none;
+    color: gray;
+}
+.section1-headline-link a:last-child {
+    color: black;
+    font-weight: bold;
+}
+.section1-headline-link-bar {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -1%;
+}
+.section1-context-container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section1-image1 {
+    height: 450px;
+    background-image: url("../../public/images/codingimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section1-context {
+    margin-top: 5%;
+    line-height: 2;
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    align-self: center;
+    font-weight: 500;
+}
+.section2 {
+    width: 100%;
+    height: 1000px;
+}
+.section2-headline {
+    text-align: left;
+    margin-right: 63%;
+    margin-top: 2%;
+    padding: 0;
+    font-size: 130px;
+}
+.section2-context-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 38%;
+}
+.section2-context-container-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    text-align: left;
+    width: 60%; 
+}
+.section2-context-title {
+    font-size:  60px;
+    margin-right: 30%;
+    width: 5%;
+
+}
+.section2-context-context {
+    font-size: 35px;
+}
+.section3 {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    height: 1200px;
+    margin-bottom: 10%;
+}
+.section3-headline {
+    text-align: left;
+    margin-right: 53%;
+    margin-top: -20%;
+    padding: 0;
+    font-size: 130px;
+}
+.section3-context-container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
+}
+.section3-context-box {
+    border-top: 5px solid black;
+    width: 550px;
+    height: 100px;
+    margin-right: 5%;
+    text-align: left;
+}
+.section3-context-box-top{
+    color: lightgray;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.section3-context-box-title {
+    font-size: 70px;
+    margin-top: 15%;
+    font-weight: bold;
+}
+.section3-context-box-context {
+    font-size: 35px;
+    margin-top: 7%;
+    font-weight: bold;
+}
+.section3-context-hover-btn {
+    font-size: 30px;
+    margin-top: 10%;
+}
