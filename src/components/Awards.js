@@ -18,10 +18,9 @@ const Awards = () => {
                 </div>
                 <div className='awards-section1-context-container'>
                     <div className="awards-section1-image1" ></div>
-                    <div className='awards-section1-context'>차별화된 크리에이티브를 가진 여러 고객들과 즐거움과 편의성이 함께하는 웹 서비스, 앱 서비스를
-                        전 세계에 퍼블리싱합니다.<br />
-                        저는 지속적인 도전과 새로운 기술로 서비스의 편의성을 혁신하고, 더 많은 사용자들에게 사랑받을 수 있도록 플랫폼과 서비스를 확장합니다.<br />
-                        저는 열정과 의지를 지닌 동료들과 함께 성장하며, 글로벌 시장에서 인정받는 서비스를 목표에 두고 있습니다.</div>
+                    <div className='awards-section1-context'>저는 SW 분야에서 다양한 상을 수상하며 꾸준한 성장을 이뤄왔습니다.
+                    아래의 성과들은 저의 능력과 노력을 인정받은 결과이며, 앞으로도 지속적인 발전을 위해 끊임없이 노력할 것입니다.<br />
+                    저의 성과는 단순한 결과물에 그치지 않고, 앞으로 더 많은 도전과 성취를 이뤄나가기 위한 밑거름이 될 것입니다.</div>
                 </div>
                 <div className='awards-list-container'>
                 <div className='awards-list-container-container'>
@@ -51,12 +50,12 @@ const Awards = () => {
                         <div className='awards-list-bar'></div>
                         <div className='awards-context-container'>
                         <div className='awards-context-container-container'>
-                            <div className='awards-month'>2023.08</div>
-                            <div className='awards-context'>마음 AI 해커톤 대상</div>
+                            <div className='awards-month'>2024.05</div>
+                            <div className='awards-context'>교내 SW 경진대회 대상</div>
                         </div>
                         <div className='awards-context-container-container'>
-                            <div className='awards-month'>2023.11</div>
-                            <div className='awards-context'>교내 sw 경진대회 대상</div>
+                            <div className='awards-month'>2024.06</div>
+                            <div className='awards-context'>캡스톤 경진대회</div>
                         </div>
                         </div>
                     </div>
