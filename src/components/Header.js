@@ -43,8 +43,8 @@ const Header = () => {
           <div className='menu-item-container'>
             <span className='menu-item-title'>About</span>
             <Link to="/devstory" className="menu-item">개발자 스토리</Link>
+            <Link to="/awards" className="menu-item">Awards</Link>
             <Link to="" className="menu-item">도전의 역사</Link>
-            <Link to="" className="menu-item">Awards</Link>
           </div>
           <div className='menu-item-container'>
             <span className='menu-item-title'>Contact</span>
