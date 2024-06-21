@@ -83,7 +83,7 @@
 
 .awards-list-bar {
     width: 1px;
-    height: 500px;
+    height: 1100px;
     background-color: gray;
 }
 
@@ -93,9 +93,7 @@
     align-items: flex-start;
     margin-left: 200px;
     text-align: left;
-}
-.awards-context-container-container:nth-child(2) {
-    margin-top: 0%;
+    margin-bottom: 20%;
 }
 
 .awards-month {
