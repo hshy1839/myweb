@@ -57,13 +57,14 @@
     background-attachment: fixed;
 }
 .awards-section1-context {
-    margin-top: 5%;
+    margin-top: 0%;
     line-height: 2;
     font-size: 26px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: left;
     align-self: center;
     font-weight: 500;
+    padding: 100px;
 }
 .awards-list-container {
     margin-top: 20%;
@@ -83,7 +84,7 @@
 
 .awards-list-bar {
     width: 1px;
-    height: 1100px;
+    height: 900px;
     background-color: gray;
 }
 

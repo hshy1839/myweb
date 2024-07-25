@@ -11,9 +11,9 @@ const DevStory = () => {
                     <div className='devstory-section1-headline-link'>
                         <Link to={'/'}>Home</Link>
                         <div className='devstory-section1-headline-link-bar'>▶</div>
-                        <Link to={'/'}>About</Link>
+                        <Link to={'/devstory'}>About</Link>
                         <div className='devstory-section1-headline-link-bar'>▶</div>
-                        <Link to={'/'}>개발자 스토리</Link>
+                        <Link to={'/devstory'}>개발자 스토리</Link>
                     </div>
                 </div>
                 <div className='devstory-section1-context-container'>

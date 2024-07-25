@@ -11,9 +11,9 @@ const Awards = () => {
                     <div className='awards-section1-headline-link'>
                         <Link to={'/'}>Home</Link>
                         <div className='awards-section1-headline-link-bar'>▶</div>
-                        <Link to={'/'}>About</Link>
+                        <Link to={'/devstory'}>About</Link>
                         <div className='awards-section1-headline-link-bar'>▶</div>
-                        <Link to={'/'}>Awards</Link>
+                        <Link to={'/awards'}>Awards</Link>
                     </div>
                 </div>
                 <div className='awards-section1-context-container'>
@@ -33,7 +33,7 @@ const Awards = () => {
                         </div>
                         <div className='awards-context-container-container'>
                             <div className='awards-month'>2023.11</div>
-                            <div className='awards-context'>교내 sw 경진대회 대상</div>
+                            <div className='awards-context'>SW 경진대회 대상</div>
                         </div>
                         <div className='awards-context-container-container'>
                             <div className='awards-month'>2023.11</div>
@@ -41,7 +41,7 @@ const Awards = () => {
                         </div>
                         <div className='awards-context-container-container'>
                             <div className='awards-month'>2023.12</div>
-                            <div className='awards-context'>교내 ICT 경진대회(학술제) 최우수상</div>
+                            <div className='awards-context'>ICT 경진대회(학술제) 최우수상</div>
                         </div>
                         </div>
                     </div>
@@ -51,11 +51,11 @@ const Awards = () => {
                         <div className='awards-context-container'>
                         <div className='awards-context-container-container'>
                             <div className='awards-month'>2024.05</div>
-                            <div className='awards-context'>교내 SW 경진대회 대상</div>
+                            <div className='awards-context'>SW 경진대회 대상</div>
                         </div>
                         <div className='awards-context-container-container'>
                             <div className='awards-month'>2024.06</div>
-                            <div className='awards-context'>캡스톤 경진대회</div>
+                            <div className='awards-context'>캡스톤 경진대회 장려상</div>
                         </div>
                         </div>
                     </div>
